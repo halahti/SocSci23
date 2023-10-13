@@ -110,7 +110,8 @@ frame refyr {
 use "D:\e45\custom-made\u1543_tk\u1543_asuinkunta_laaja_1971_86.dta"
 destring kunta, gen(nro)
 merge m:1 nro using "D:\e45\external\u1543_biopankki_osa2\tutkpalv_u1543_peruskoulukunnat.dta", keepusing(peruskoulu)
-*tutkpalv_u1543_peruskoulukunnat.dta includes manually coded school refrom implementation years (base on the letter by the Finnish national acengy of education, dated 30 May 1972)
+*tutkpalv_u1543_peruskoulukunnat.dta includes manually coded school refrom implementation years 
+*dataset creation based on file https://github.com/halahti/SocSci23/blob/main/reform_years_municipalities.do
 
 drop if thl_id==""
 
